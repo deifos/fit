@@ -1,0 +1,39 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fit-vlad",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-10-13",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": false,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fit-vlad",
+      "database_id": "98062bca-1944-4ae0-b53b-9416a463b813",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "OTP_DELIVERY": "cloudflare",
+    "EMAIL_FROM": "fit@vladpalacio.com",
+    "BETTER_AUTH_URL": "https://fit.vladpalacio.com",
+    "OWNER_EMAIL": "vlad.palacio@gmail.com"
+  },
+  "account_id": "30679ba5dbdc0a5ed810534c25511791",
+  "routes": [
+    {
+      "pattern": "fit.vladpalacio.com",
+      "custom_domain": true
+    }
+  ],
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "destination_address": "vlad.palacio@gmail.com"
+    }
+  ]
+}

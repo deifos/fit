@@ -1,0 +1,14 @@
+{
+  // Copy to the repository root and fill these values only after authorization.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fit-vlad",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-10-13",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{"pattern": "fit.vladpalacio.com", "custom_domain": true}],
+  "d1_databases": [{"binding": "DB", "database_name": "fit-vlad", "database_id": "REPLACE_AFTER_AUTHORIZATION", "migrations_dir": "migrations"}],
+  "send_email": [{"name":"EMAIL","destination_address":"REPLACE_WITH_VERIFIED_OWNER_EMAIL"}],
+  "vars": {"APP_ENV": "production", "OTP_DELIVERY":"cloudflare", "EMAIL_FROM":"REPLACE_WITH_VERIFIED_SENDER", "BETTER_AUTH_URL": "https://fit.vladpalacio.com", "OWNER_EMAIL": "REPLACE_WITH_CONFIRMED_OWNER"}
+}

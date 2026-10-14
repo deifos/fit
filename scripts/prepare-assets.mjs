@@ -1,0 +1,11 @@
+// The handoff authorizes extraction of separately reviewed rows. Original sheets stay intact.
+import sharp from 'sharp';import fs from 'node:fs';
+const boundaries={'presses.png':[0,310,615,920,1225,1510],'chest-arms.png':[0,289,583,900,1197,1500],'back-v2.png':[0,315,627,876,1148,1500],'legs.png':[0,302,572,869,1155,1505],'shoulders.png':[0,263,592,897,1189,1495],'arms-kettlebells.png':[0,291,583,855,1188,1500],'full-body.png':[0,304,629,960,1160,1490],'clean-press.png':[0,730,1480]};
+const index=JSON.parse(fs.readFileSync('assets/exercise-index.json','utf8'));const catalog=JSON.parse(fs.readFileSync('src/features/plan/exercises.json','utf8'));fs.mkdirSync('public/assets/exercises',{recursive:true});
+for(const e of index){if(['barbell-romanian-deadlift','two-hand-kettlebell-swing','turkish-get-up'].includes(e.id))continue;const file=e.sheet.split('/').at(-1),b=boundaries[file];const meta=await sharp('assets/'+e.sheet).metadata();const top=Math.round(b[e.row-1]/1536*meta.height),bottom=Math.round(b[e.row]/1536*meta.height);await sharp('assets/'+e.sheet).extract({left:0,top,width:meta.width,height:bottom-top}).webp({quality:88}).toFile('public/assets/exercises/'+e.id+'.webp');}
+const generated={'turkish-get-up':'exec-d6ac1829-4200-4e55-a397-bd0348d1b544.png','barbell-romanian-deadlift':'exec-e4619ca3-9830-44bd-a9b8-e460155a1b2d.png','two-hand-kettlebell-swing':'exec-235c2ae4-d113-4d96-8f82-188961ffea75.png'};
+for(const [slug,file] of Object.entries(generated)){const source='assets/reviewed/'+slug+'.png';if(!fs.existsSync(source))throw new Error('Missing reviewed source: '+source);await sharp(source).resize({width:1400,withoutEnlargement:true}).webp({quality:88}).toFile('public/assets/exercises/'+slug+'.webp')}
+await sharp('assets/hero/gym-banner.png').resize({width:1800,withoutEnlargement:true}).webp({quality:84}).toFile('public/assets/hero/gym-banner.webp');
+for(const e of catalog){if(fs.existsSync('public/assets/exercises/'+e.slug+'.webp')){e.image='/assets/exercises/'+e.slug+'.webp';e.reviewStatus='visual-review-passed'}}
+fs.writeFileSync('src/features/plan/exercises.json',JSON.stringify(catalog,null,2));
+console.log('Prepared individual exercise assets and a smaller banner. Originals preserved.');

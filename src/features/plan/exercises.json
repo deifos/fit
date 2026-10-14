@@ -1,0 +1,839 @@
+[
+  {
+    "slug": "incline-barbell-press",
+    "name": "Incline barbell press",
+    "muscles": [
+      "Chest",
+      "Triceps",
+      "Front shoulders"
+    ],
+    "instructions": [
+      "Set the bench to a moderate incline and keep both feet on the floor.",
+      "Grip the bar slightly wider than your shoulders. Keep your wrists above your elbows.",
+      "Lower the bar towards your upper chest with control.",
+      "Press above your chest. Keep your hips on the bench."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/incline-barbell-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/incline-barbell-bench-press"
+  },
+  {
+    "slug": "incline-dumbbell-press",
+    "name": "Incline dumbbell press",
+    "muscles": [
+      "Chest",
+      "Triceps",
+      "Front shoulders"
+    ],
+    "instructions": [
+      "Sit on an incline bench with a dumbbell in each hand.",
+      "Keep your feet stable and your shoulder blades against the bench.",
+      "Lower the weights beside your upper chest.",
+      "Press the weights above your shoulders without striking them together."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/incline-dumbbell-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/25/incline-chest-press/"
+  },
+  {
+    "slug": "flat-barbell-bench-press",
+    "name": "Flat barbell bench press",
+    "muscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "instructions": [
+      "Lie on a flat bench. Keep your feet on the floor.",
+      "Grip the bar with wrists above your elbows.",
+      "Lower towards your chest with control.",
+      "Press up and keep your hips on the bench."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/flat-barbell-bench-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/5/chest-press/"
+  },
+  {
+    "slug": "parallel-bar-dips",
+    "name": "Parallel bar dips",
+    "muscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "instructions": [
+      "Support your weight on parallel bars with your arms extended.",
+      "Lower with control. Keep your shoulders stable.",
+      "Stop at a comfortable depth.",
+      "Press back to the supported position."
+    ],
+    "equipment": "Bodyweight",
+    "loadBasis": "bodyweight",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/parallel-bar-dips.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.catalystathletics.com/exercise/547/Dip/"
+  },
+  {
+    "slug": "dumbbell-fly",
+    "name": "Dumbbell fly",
+    "muscles": [
+      "Chest"
+    ],
+    "instructions": [
+      "Lie on a flat bench with the weights above your chest.",
+      "Keep a slight bend in both elbows.",
+      "Open your arms to a comfortable range without forcing a stretch.",
+      "Bring the weights back above your chest with the same elbow bend."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/dumbbell-fly.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/21/lying-chest-fly/"
+  },
+  {
+    "slug": "pec-deck",
+    "name": "Pec deck",
+    "muscles": [
+      "Chest"
+    ],
+    "instructions": [
+      "Set the seat so the handles are near chest height.",
+      "Keep your back against the pad and feet on the floor.",
+      "Bring the handles together in front of your chest.",
+      "Return with control."
+    ],
+    "equipment": "Machine",
+    "loadBasis": "machine",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/pec-deck.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://hurglobal.com/wp-content/uploads/2025/04/hur_owners_manual_analog_machines_eng_v2.pdf"
+  },
+  {
+    "slug": "triceps-pushdown",
+    "name": "Triceps pushdown",
+    "muscles": [
+      "Triceps"
+    ],
+    "instructions": [
+      "Stand facing a high cable with elbows beside your ribs.",
+      "Start with bent elbows and wrists straight.",
+      "Extend your elbows and press the handle down.",
+      "Return without moving your upper arms forward."
+    ],
+    "equipment": "Machine",
+    "loadBasis": "machine",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/triceps-pushdown.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://yogiathletics.com/library/triceps-pushdown"
+  },
+  {
+    "slug": "overhead-dumbbell-extension",
+    "name": "Overhead dumbbell extension",
+    "muscles": [
+      "Triceps"
+    ],
+    "instructions": [
+      "Hold one dumbbell with both hands above your head.",
+      "Keep your trunk stable and upper arms near your head.",
+      "Bend your elbows to lower the weight behind your head.",
+      "Extend your elbows without arching your back."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/overhead-dumbbell-extension.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://theprehabguys.com/vimeo-video/standing-overhead-tricep-extension-dumbbell-3/"
+  },
+  {
+    "slug": "barbell-curl",
+    "name": "Barbell curl",
+    "muscles": [
+      "Biceps"
+    ],
+    "instructions": [
+      "Stand with the bar at your thighs, palms forward.",
+      "Keep your elbows beside your trunk.",
+      "Bend your elbows to raise the bar.",
+      "Lower without swinging your body."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/barbell-curl.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/"
+  },
+  {
+    "slug": "dumbbell-curl",
+    "name": "Dumbbell curl",
+    "muscles": [
+      "Biceps"
+    ],
+    "instructions": [
+      "Stand with one dumbbell in each hand.",
+      "Turn your palms forward and keep elbows beside your trunk.",
+      "Curl both weights without leaning back.",
+      "Lower with control."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/dumbbell-curl.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/"
+  },
+  {
+    "slug": "pull-up",
+    "name": "Pull-up",
+    "muscles": [
+      "Back",
+      "Biceps"
+    ],
+    "instructions": [
+      "Grip an overhead bar and hang with a controlled shoulder position.",
+      "Pull your elbows down as you raise your body.",
+      "Bring your chin above the bar without reaching your neck forward.",
+      "Lower with control."
+    ],
+    "equipment": "Bodyweight",
+    "loadBasis": "bodyweight",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/pull-up.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/pull-up"
+  },
+  {
+    "slug": "lat-pulldown",
+    "name": "Lat pulldown",
+    "muscles": [
+      "Back",
+      "Biceps"
+    ],
+    "instructions": [
+      "Adjust the thigh pad and place both feet on the floor.",
+      "Grip the bar overhead. Keep your chest lifted.",
+      "Pull the bar in front of your face towards your upper chest.",
+      "Return overhead with control. Never pull behind your neck."
+    ],
+    "equipment": "Machine",
+    "loadBasis": "machine",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/lat-pulldown.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/"
+  },
+  {
+    "slug": "barbell-row",
+    "name": "Barbell row",
+    "muscles": [
+      "Back",
+      "Biceps"
+    ],
+    "instructions": [
+      "Hinge at your hips with a slight knee bend.",
+      "Keep your back stable and let the bar hang below your shoulders.",
+      "Pull the bar towards your lower ribs.",
+      "Lower the bar without changing your trunk angle."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/barbell-row.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/12/bent-over-row/"
+  },
+  {
+    "slug": "one-arm-dumbbell-row",
+    "name": "One-arm dumbbell row",
+    "muscles": [
+      "Back",
+      "Biceps"
+    ],
+    "instructions": [
+      "Support one hand and knee on a bench.",
+      "Hold the weight below the other shoulder with your back stable.",
+      "Pull your elbow towards your hip.",
+      "Lower with control. Repeat on the other side."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": true,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/one-arm-dumbbell-row.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.catalystathletics.com/exercise/568/Single-Arm-Dumbbell-Row/"
+  },
+  {
+    "slug": "face-pull",
+    "name": "Face pull",
+    "muscles": [
+      "Rear shoulders",
+      "Upper back"
+    ],
+    "instructions": [
+      "Set a rope cable near face height.",
+      "Stand stable and hold the rope with arms extended.",
+      "Pull the rope towards your face and separate your hands.",
+      "Return with control without leaning back."
+    ],
+    "equipment": "Machine",
+    "loadBasis": "machine",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/face-pull.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.catalystathletics.com/exercise/767/Face-Pull/"
+  },
+  {
+    "slug": "barbell-back-squat",
+    "name": "Barbell back squat",
+    "muscles": [
+      "Quadriceps",
+      "Glutes"
+    ],
+    "instructions": [
+      "Place the bar across your upper back, clear of your neck.",
+      "Stand with a stable foot position and brace your trunk.",
+      "Bend your hips and knees while keeping heels grounded.",
+      "Stand up with knees aligned with your feet."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/barbell-back-squat.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/"
+  },
+  {
+    "slug": "leg-press",
+    "name": "Leg press",
+    "muscles": [
+      "Quadriceps",
+      "Glutes"
+    ],
+    "instructions": [
+      "Adjust the seat and place your feet on the platform.",
+      "Keep your back and hips against the pad.",
+      "Bend your knees only as far as your hips remain supported.",
+      "Press the platform away without forcefully locking your knees."
+    ],
+    "equipment": "Machine",
+    "loadBasis": "machine",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/leg-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/leg-press"
+  },
+  {
+    "slug": "barbell-romanian-deadlift",
+    "name": "Barbell Romanian deadlift",
+    "muscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "instructions": [
+      "Stand with the bar at your thighs and knees slightly bent.",
+      "Push your hips back and keep the bar close to your legs.",
+      "Lower only as far as you can keep your back stable.",
+      "Drive your hips forward to stand. Do not lean back."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/barbell-romanian-deadlift.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/romanian-deadlift-barbell"
+  },
+  {
+    "slug": "leg-extension",
+    "name": "Leg extension",
+    "muscles": [
+      "Quadriceps"
+    ],
+    "instructions": [
+      "Align your knees with the machine pivot.",
+      "Place the roller above your ankles and hold the handles.",
+      "Extend your knees with control.",
+      "Lower the roller without lifting your hips."
+    ],
+    "equipment": "Machine",
+    "loadBasis": "machine",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/leg-extension.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/183/seated-leg-extension/"
+  },
+  {
+    "slug": "standing-barbell-calf-raise",
+    "name": "Standing barbell calf raise",
+    "muscles": [
+      "Calves"
+    ],
+    "instructions": [
+      "Secure the bar on your upper back and use a stable support setup.",
+      "Place the balls of your feet on the step.",
+      "Raise your heels while keeping your knees stable.",
+      "Lower your heels with control."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/standing-barbell-calf-raise.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/51/calf-raises/"
+  },
+  {
+    "slug": "dumbbell-rear-delt-fly",
+    "name": "Dumbbell rear delt fly",
+    "muscles": [
+      "Rear shoulders",
+      "Upper back"
+    ],
+    "instructions": [
+      "Hinge at your hips and keep your back stable.",
+      "Let the weights hang with a slight elbow bend.",
+      "Raise your arms out to the sides.",
+      "Lower without swinging or changing your trunk angle."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/dumbbell-rear-delt-fly.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.catalystathletics.com/exercise/870/Rear-Delt-Fly/"
+  },
+  {
+    "slug": "barbell-overhead-press",
+    "name": "Barbell overhead press",
+    "muscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "instructions": [
+      "Stand with the bar at your upper chest.",
+      "Brace your trunk and keep knees steady.",
+      "Press the bar overhead, moving your head clear of its path.",
+      "Lower to your upper chest with control."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/barbell-overhead-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://mail.catalystathletics.com/article/1912/The-Press-for-Weightlifting-How-Useful-Is-It/"
+  },
+  {
+    "slug": "seated-dumbbell-overhead-press",
+    "name": "Seated dumbbell overhead press",
+    "muscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "instructions": [
+      "Sit against a supported bench with feet flat.",
+      "Hold the weights at shoulder height.",
+      "Press overhead without arching your back.",
+      "Lower to shoulder height with control."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/seated-dumbbell-overhead-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/45/seated-overhead-press/"
+  },
+  {
+    "slug": "dumbbell-lateral-raise",
+    "name": "Dumbbell lateral raise",
+    "muscles": [
+      "Side shoulders"
+    ],
+    "instructions": [
+      "Stand with the weights beside your thighs.",
+      "Keep elbows slightly bent.",
+      "Raise your arms out to about shoulder height.",
+      "Lower without swinging."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/dumbbell-lateral-raise.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/26/lateral-raise/"
+  },
+  {
+    "slug": "close-grip-bench-press",
+    "name": "Close-grip bench press",
+    "muscles": [
+      "Triceps",
+      "Chest"
+    ],
+    "instructions": [
+      "Lie on a flat bench with feet grounded.",
+      "Use a grip near shoulder width and keep wrists stable.",
+      "Lower the bar towards your chest with elbows near your sides.",
+      "Press up with control."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/close-grip-bench-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/311/close-grip-bench-press/"
+  },
+  {
+    "slug": "hammer-curl",
+    "name": "Hammer curl",
+    "muscles": [
+      "Biceps",
+      "Forearms"
+    ],
+    "instructions": [
+      "Stand with dumbbells at your sides and palms facing inward.",
+      "Keep elbows beside your trunk.",
+      "Curl the weights with palms still facing inward.",
+      "Lower without swinging."
+    ],
+    "equipment": "Dumbbell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/hammer-curl.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/10/hammer-curl/"
+  },
+  {
+    "slug": "ez-bar-curl",
+    "name": "EZ-bar curl",
+    "muscles": [
+      "Biceps"
+    ],
+    "instructions": [
+      "Grip the angled parts of the bar with palms facing upward.",
+      "Keep your elbows beside your trunk.",
+      "Curl the bar without moving your shoulders forward.",
+      "Lower with control."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/ez-bar-curl.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/"
+  },
+  {
+    "slug": "one-arm-kettlebell-row",
+    "name": "One-arm kettlebell row",
+    "muscles": [
+      "Back",
+      "Biceps"
+    ],
+    "instructions": [
+      "Hinge at the hips and support your free hand.",
+      "Let the kettlebell hang below your shoulder.",
+      "Pull the bell towards your lower ribs without rotating your trunk.",
+      "Lower and repeat on the other side."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": true,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/one-arm-kettlebell-row.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.catalystathletics.com/exercise/568/Single-Arm-Dumbbell-Row/"
+  },
+  {
+    "slug": "strict-kettlebell-press",
+    "name": "Strict kettlebell press",
+    "muscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "instructions": [
+      "Hold one kettlebell in the rack beside your shoulder.",
+      "Keep the wrist straight and the bell against the forearm.",
+      "Press overhead with no leg drive.",
+      "Lower to the rack with control. Repeat on the other side."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": true,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/strict-kettlebell-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/395/single-arm-overhead-press/"
+  },
+  {
+    "slug": "kettlebell-goblet-squat",
+    "name": "Kettlebell goblet squat",
+    "muscles": [
+      "Quadriceps",
+      "Glutes"
+    ],
+    "instructions": [
+      "Hold one bell close to your chest with both hands.",
+      "Brace your trunk and keep heels grounded.",
+      "Bend your hips and knees into a controlled squat.",
+      "Stand while keeping the bell close to your chest."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/kettlebell-goblet-squat.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/goblet-squat"
+  },
+  {
+    "slug": "two-hand-kettlebell-swing",
+    "name": "Two-hand kettlebell swing",
+    "muscles": [
+      "Glutes",
+      "Hamstrings"
+    ],
+    "instructions": [
+      "Place the bell in front of you and hinge to grip it with both hands.",
+      "Hike it back between your thighs with a stable back.",
+      "Extend your hips to let the bell float to chest height. Do not lift with your arms.",
+      "Let the bell fall and hinge again as it returns between your thighs."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/two-hand-kettlebell-swing.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.strongfirst.com/achieve/sinister/"
+  },
+  {
+    "slug": "barbell-deadlift",
+    "name": "Barbell deadlift",
+    "muscles": [
+      "Glutes",
+      "Hamstrings",
+      "Back"
+    ],
+    "instructions": [
+      "Stand with the bar over midfoot, close to your shins.",
+      "Bend at hips and knees to grip the bar and brace your trunk.",
+      "Push through the floor and stand with the bar close to your legs.",
+      "Return the bar by moving your hips back, then bending your knees."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/barbell-deadlift.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/"
+  },
+  {
+    "slug": "trap-bar-deadlift",
+    "name": "Trap-bar deadlift",
+    "muscles": [
+      "Glutes",
+      "Quadriceps",
+      "Back"
+    ],
+    "instructions": [
+      "Stand in the centre of the trap bar.",
+      "Bend hips and knees to grip both handles.",
+      "Brace your trunk and stand with the handles at your sides.",
+      "Lower the bar with control."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/trap-bar-deadlift.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://theprehabguys.com/vimeo-video/hex-bar-vs-barbell-deadlift-knowing-the-difference/"
+  },
+  {
+    "slug": "push-up",
+    "name": "Push-up",
+    "muscles": [
+      "Chest",
+      "Triceps",
+      "Trunk"
+    ],
+    "instructions": [
+      "Start in a high plank with hands near shoulder width.",
+      "Keep your trunk and hips in one line.",
+      "Bend your elbows to lower your chest towards the floor.",
+      "Press up without letting your hips sag."
+    ],
+    "equipment": "Bodyweight",
+    "loadBasis": "bodyweight",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/push-up.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/push-up"
+  },
+  {
+    "slug": "double-kettlebell-front-squat",
+    "name": "Double kettlebell front squat",
+    "muscles": [
+      "Quadriceps",
+      "Glutes"
+    ],
+    "instructions": [
+      "Rack one bell beside each shoulder with straight wrists.",
+      "Keep elbows near your trunk and brace your body.",
+      "Squat with heels grounded and both bells held in the rack.",
+      "Stand with the bells still in the rack. Count one rep for the paired movement."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/double-kettlebell-front-squat.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.nasm.org/resource-center/exercise-library/kettlebell-front-squat"
+  },
+  {
+    "slug": "single-kettlebell-clean-and-press",
+    "name": "Single kettlebell clean and press",
+    "muscles": [
+      "Glutes",
+      "Shoulders",
+      "Triceps"
+    ],
+    "instructions": [
+      "Hinge and hike one bell between your legs.",
+      "Extend your hips and guide the bell close to your body into the rack. Do not flip it onto your wrist.",
+      "Pause in the rack with a straight wrist.",
+      "Press overhead, then lower to the rack and return to the hinge. Repeat on the other side."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": true,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/single-kettlebell-clean-and-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.acefitness.org/resources/everyone/exercise-library/383/clean-and-press/"
+  },
+  {
+    "slug": "double-kettlebell-clean-and-press",
+    "name": "Double kettlebell clean and press",
+    "muscles": [
+      "Glutes",
+      "Shoulders",
+      "Triceps"
+    ],
+    "instructions": [
+      "Hinge and hike both bells between your legs.",
+      "Extend your hips and guide both bells close into the front rack.",
+      "Pause with straight wrists and a stable trunk.",
+      "Press both bells overhead. Return to the rack, then the hinge. Count one rep for the pair."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 2,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/double-kettlebell-clean-and-press.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.strongfirst.com/3-cleans-relationship-form-function/"
+  },
+  {
+    "slug": "turkish-get-up",
+    "name": "Turkish get-up",
+    "muscles": [
+      "Shoulders",
+      "Trunk",
+      "Glutes"
+    ],
+    "instructions": [
+      "Lie on your back with the bell in your right hand, right arm vertical, right knee bent and left leg extended.",
+      "Roll to your left elbow while keeping the bell above your shoulder.",
+      "Press onto your left hand.",
+      "Raise your hips to make space for your left leg.",
+      "Sweep the left knee under your hips to a supported kneeling position.",
+      "Lift your left hand and align into an upright half-kneel.",
+      "Stand. Reverse each step with control. Repeat on the other side."
+    ],
+    "equipment": "Kettlebell",
+    "loadBasis": "per-implement",
+    "equipmentCount": 1,
+    "unilateral": true,
+    "instructionVersion": 1,
+    "image": "/assets/exercises/turkish-get-up.webp",
+    "reviewStatus": "visual-review-passed",
+    "techniqueSource": "https://www.strongfirst.com/achieve/sinister/"
+  }
+]

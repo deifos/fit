@@ -1,0 +1,382 @@
+[
+  {
+    "slug": "incline-barbell-press",
+    "asset": "/assets/exercises/incline-barbell-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/incline-barbell-bench-press",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "incline-dumbbell-press",
+    "asset": "/assets/exercises/incline-dumbbell-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/25/incline-chest-press/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "flat-barbell-bench-press",
+    "asset": "/assets/exercises/flat-barbell-bench-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/5/chest-press/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "parallel-bar-dips",
+    "asset": "/assets/exercises/parallel-bar-dips.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.catalystathletics.com/exercise/547/Dip/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "dumbbell-fly",
+    "asset": "/assets/exercises/dumbbell-fly.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/21/lying-chest-fly/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "pec-deck",
+    "asset": "/assets/exercises/pec-deck.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://hurglobal.com/wp-content/uploads/2025/04/hur_owners_manual_analog_machines_eng_v2.pdf",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "triceps-pushdown",
+    "asset": "/assets/exercises/triceps-pushdown.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://yogiathletics.com/library/triceps-pushdown",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "overhead-dumbbell-extension",
+    "asset": "/assets/exercises/overhead-dumbbell-extension.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://theprehabguys.com/vimeo-video/standing-overhead-tricep-extension-dumbbell-3/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "barbell-curl",
+    "asset": "/assets/exercises/barbell-curl.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "dumbbell-curl",
+    "asset": "/assets/exercises/dumbbell-curl.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/",
+    "sourceScope": "Movement-family reference; equipment variation checked against written instructions.",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "pull-up",
+    "asset": "/assets/exercises/pull-up.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/pull-up",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "lat-pulldown",
+    "asset": "/assets/exercises/lat-pulldown.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "barbell-row",
+    "asset": "/assets/exercises/barbell-row.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/12/bent-over-row/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "one-arm-dumbbell-row",
+    "asset": "/assets/exercises/one-arm-dumbbell-row.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.catalystathletics.com/exercise/568/Single-Arm-Dumbbell-Row/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "face-pull",
+    "asset": "/assets/exercises/face-pull.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.catalystathletics.com/exercise/767/Face-Pull/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "barbell-back-squat",
+    "asset": "/assets/exercises/barbell-back-squat.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "leg-press",
+    "asset": "/assets/exercises/leg-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/leg-press",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "barbell-romanian-deadlift",
+    "asset": "/assets/exercises/barbell-romanian-deadlift.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/romanian-deadlift-barbell",
+    "sourceScope": "Exercise reference",
+    "correction": "Replaced draft with corrected image."
+  },
+  {
+    "slug": "leg-extension",
+    "asset": "/assets/exercises/leg-extension.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/183/seated-leg-extension/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "standing-barbell-calf-raise",
+    "asset": "/assets/exercises/standing-barbell-calf-raise.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/51/calf-raises/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "dumbbell-rear-delt-fly",
+    "asset": "/assets/exercises/dumbbell-rear-delt-fly.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.catalystathletics.com/exercise/870/Rear-Delt-Fly/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "barbell-overhead-press",
+    "asset": "/assets/exercises/barbell-overhead-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://mail.catalystathletics.com/article/1912/The-Press-for-Weightlifting-How-Useful-Is-It/",
+    "sourceScope": "Movement-family reference; equipment variation checked against written instructions.",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "seated-dumbbell-overhead-press",
+    "asset": "/assets/exercises/seated-dumbbell-overhead-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/45/seated-overhead-press/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "dumbbell-lateral-raise",
+    "asset": "/assets/exercises/dumbbell-lateral-raise.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/26/lateral-raise/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "close-grip-bench-press",
+    "asset": "/assets/exercises/close-grip-bench-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/311/close-grip-bench-press/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "hammer-curl",
+    "asset": "/assets/exercises/hammer-curl.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/10/hammer-curl/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "ez-bar-curl",
+    "asset": "/assets/exercises/ez-bar-curl.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/70/bicep-curl/",
+    "sourceScope": "Movement-family reference; equipment variation checked against written instructions.",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "one-arm-kettlebell-row",
+    "asset": "/assets/exercises/one-arm-kettlebell-row.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.catalystathletics.com/exercise/568/Single-Arm-Dumbbell-Row/",
+    "sourceScope": "Movement-family reference; equipment variation checked against written instructions.",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "strict-kettlebell-press",
+    "asset": "/assets/exercises/strict-kettlebell-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/395/single-arm-overhead-press/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "kettlebell-goblet-squat",
+    "asset": "/assets/exercises/kettlebell-goblet-squat.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/goblet-squat",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "two-hand-kettlebell-swing",
+    "asset": "/assets/exercises/two-hand-kettlebell-swing.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.strongfirst.com/achieve/sinister/",
+    "sourceScope": "Exercise reference",
+    "correction": "Replaced draft with corrected image."
+  },
+  {
+    "slug": "barbell-deadlift",
+    "asset": "/assets/exercises/barbell-deadlift.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "trap-bar-deadlift",
+    "asset": "/assets/exercises/trap-bar-deadlift.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://theprehabguys.com/vimeo-video/hex-bar-vs-barbell-deadlift-knowing-the-difference/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "push-up",
+    "asset": "/assets/exercises/push-up.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/push-up",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "double-kettlebell-front-squat",
+    "asset": "/assets/exercises/double-kettlebell-front-squat.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.nasm.org/resource-center/exercise-library/kettlebell-front-squat",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "single-kettlebell-clean-and-press",
+    "asset": "/assets/exercises/single-kettlebell-clean-and-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.acefitness.org/resources/everyone/exercise-library/383/clean-and-press/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "double-kettlebell-clean-and-press",
+    "asset": "/assets/exercises/double-kettlebell-clean-and-press.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.strongfirst.com/3-cleans-relationship-form-function/",
+    "sourceScope": "Exercise reference",
+    "correction": "Separate reviewed row extracted from supplied sheet."
+  },
+  {
+    "slug": "turkish-get-up",
+    "asset": "/assets/exercises/turkish-get-up.webp",
+    "reviewDate": "2026-10-14",
+    "reviewer": "Codex visual review",
+    "status": "visual-review-passed",
+    "source": "https://www.strongfirst.com/achieve/sinister/",
+    "sourceScope": "Exercise reference",
+    "correction": "Replaced draft with corrected image."
+  }
+]

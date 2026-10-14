@@ -1,0 +1,307 @@
+[
+  {
+    "id": "incline-barbell-press",
+    "sheet": "exercises/presses.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "incline-dumbbell-press",
+    "sheet": "exercises/presses.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "flat-barbell-bench-press",
+    "sheet": "exercises/presses.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "parallel-bar-dips",
+    "sheet": "exercises/presses.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "dumbbell-fly",
+    "sheet": "exercises/presses.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "pec-deck",
+    "sheet": "exercises/chest-arms.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "triceps-pushdown",
+    "sheet": "exercises/chest-arms.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "overhead-dumbbell-extension",
+    "sheet": "exercises/chest-arms.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "barbell-curl",
+    "sheet": "exercises/chest-arms.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "dumbbell-curl",
+    "sheet": "exercises/chest-arms.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "pull-up",
+    "sheet": "exercises/back-v2.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "lat-pulldown",
+    "sheet": "exercises/back-v2.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "barbell-row",
+    "sheet": "exercises/back-v2.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "one-arm-dumbbell-row",
+    "sheet": "exercises/back-v2.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "face-pull",
+    "sheet": "exercises/back-v2.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "barbell-back-squat",
+    "sheet": "exercises/legs.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "leg-press",
+    "sheet": "exercises/legs.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "barbell-romanian-deadlift",
+    "sheet": "exercises/legs.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "leg-extension",
+    "sheet": "exercises/legs.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "standing-barbell-calf-raise",
+    "sheet": "exercises/legs.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "dumbbell-rear-delt-fly",
+    "sheet": "exercises/shoulders.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "barbell-overhead-press",
+    "sheet": "exercises/shoulders.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "seated-dumbbell-overhead-press",
+    "sheet": "exercises/shoulders.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "dumbbell-lateral-raise",
+    "sheet": "exercises/shoulders.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "close-grip-bench-press",
+    "sheet": "exercises/shoulders.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "hammer-curl",
+    "sheet": "exercises/arms-kettlebells.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "ez-bar-curl",
+    "sheet": "exercises/arms-kettlebells.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "one-arm-kettlebell-row",
+    "sheet": "exercises/arms-kettlebells.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "strict-kettlebell-press",
+    "sheet": "exercises/arms-kettlebells.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "kettlebell-goblet-squat",
+    "sheet": "exercises/arms-kettlebells.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "two-hand-kettlebell-swing",
+    "sheet": "exercises/full-body.png",
+    "row": 1,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "barbell-deadlift",
+    "sheet": "exercises/full-body.png",
+    "row": 2,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "trap-bar-deadlift",
+    "sheet": "exercises/full-body.png",
+    "row": 3,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "push-up",
+    "sheet": "exercises/full-body.png",
+    "row": 4,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "double-kettlebell-front-squat",
+    "sheet": "exercises/full-body.png",
+    "row": 5,
+    "format": "start-end-pair",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "single-kettlebell-clean-and-press",
+    "sheet": "exercises/clean-press.png",
+    "row": 1,
+    "format": "three-step-sequence",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "double-kettlebell-clean-and-press",
+    "sheet": "exercises/clean-press.png",
+    "row": 2,
+    "format": "three-step-sequence",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  },
+  {
+    "id": "turkish-get-up",
+    "sheet": "exercises/get-up.png",
+    "row": 1,
+    "format": "seven-step-sequence",
+    "reviewStatus": "draft",
+    "techniqueSource": null
+  }
+]
+

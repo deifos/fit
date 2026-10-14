@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.output/
+.wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+work/
+
+
+wrangler.live-local.jsonc

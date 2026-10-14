@@ -1,0 +1,12 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
+const dir=`work/migration-test-${Date.now()}`;fs.mkdirSync(dir+'/migrations',{recursive:true});
+fs.writeFileSync(dir+'/wrangler.json',JSON.stringify({name:'fit-migration-test',compatibility_date:'2026-10-13',d1_databases:[{binding:'DB',database_name:'fit-migration-test',database_id:'00000000-0000-0000-0000-000000000002',migrations_dir:'migrations',remote:false}]}));
+const run=(args)=>execFileSync(process.execPath,['node_modules/wrangler/bin/wrangler.js',...args,'--config',dir+'/wrangler.json','--persist-to',dir+'/state'],{encoding:'utf8'});
+for(const f of ['0001_auth.sql','0002_records.sql'])fs.copyFileSync('migrations/'+f,dir+'/migrations/'+f);
+run(['d1','migrations','apply','fit-migration-test','--local']);
+const id=crypto.randomUUID();fs.writeFileSync(dir+'/fixture.sql',`INSERT INTO BodyWeightEntry(id,userId,payload,localDate,revision,lastOperationId) VALUES ('${id}','migration-owner','{"localDate":"2026-01-01","weightHundredths":17000,"notes":"existing"}','2026-01-01',4,'existing-op');`);
+run(['d1','execute','fit-migration-test','--local','--file',dir+'/fixture.sql']);
+fs.copyFileSync('migrations/0003_catalog.sql',dir+'/migrations/0003_catalog.sql');run(['d1','migrations','apply','fit-migration-test','--local']);
+fs.writeFileSync(dir+'/check.sql','SELECT id,revision,payload FROM BodyWeightEntry; SELECT count(*) AS count FROM Exercise; SELECT count(*) AS count FROM PlanTemplate;');
+const checks=JSON.parse(run(['d1','execute','fit-migration-test','--local','--file',dir+'/check.sql','--json']));assert.equal(checks[0].results[0].id,id);assert.equal(checks[0].results[0].revision,4);assert.equal(JSON.parse(checks[0].results[0].payload).weightHundredths,17000);assert.equal(checks[1].results[0].count,38);assert.equal(checks[2].results[0].count,15);
+console.log('PASS: empty local D1 migrations, catalogue upgrade, existing ID, revision and payload preserved.');

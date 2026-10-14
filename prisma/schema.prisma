@@ -1,0 +1,190 @@
+
+generator client {
+  provider = "prisma-client-js"
+  engineType = "client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String    @id
+  name          String
+  email         String
+  emailVerified Boolean   @default(false)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  sessions      Session[]
+  accounts      Account[]
+
+  @@unique([email])
+  @@map("user")
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([token])
+  @@index([userId])
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([userId])
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
+  @@map("verification")
+}
+
+model UserSettings {
+ id String @id
+ userId String
+ payload String
+ localDate String?
+ parentId String?
+ exerciseSlug String?
+ revision Int
+ lastOperationId String
+ deletedAt String?
+ @@index([userId, localDate])
+ @@index([userId, exerciseSlug, localDate])
+ @@index([parentId])
+ @@unique([userId])
+}
+
+model WorkoutSession {
+ id String @id
+ userId String
+ payload String
+ localDate String?
+ parentId String?
+ exerciseSlug String?
+ revision Int
+ lastOperationId String
+ deletedAt String?
+ @@index([userId, localDate])
+ @@index([userId, exerciseSlug, localDate])
+ @@index([parentId])
+ 
+}
+
+model SessionExercise {
+ id String @id
+ userId String
+ payload String
+ localDate String?
+ parentId String?
+ exerciseSlug String?
+ revision Int
+ lastOperationId String
+ deletedAt String?
+ @@index([userId, localDate])
+ @@index([userId, exerciseSlug, localDate])
+ @@index([parentId])
+ 
+}
+
+model WorkoutSet {
+ id String @id
+ userId String
+ payload String
+ localDate String?
+ parentId String?
+ exerciseSlug String?
+ revision Int
+ lastOperationId String
+ deletedAt String?
+ @@index([userId, localDate])
+ @@index([userId, exerciseSlug, localDate])
+ @@index([parentId])
+ 
+}
+
+model BodyWeightEntry {
+ id String @id
+ userId String
+ payload String
+ localDate String?
+ parentId String?
+ exerciseSlug String?
+ revision Int
+ lastOperationId String
+ deletedAt String?
+ @@index([userId, localDate])
+ @@index([userId, exerciseSlug, localDate])
+ @@index([parentId])
+ @@unique([userId, localDate])
+}
+
+model SyncReceipt {
+ id String @id
+ userId String
+ operationId String
+ requestHash String
+ entityId String
+ resultRevision Int
+ resultPayload String
+ createdAt String
+ @@unique([userId, operationId])
+ @@index([userId, createdAt])
+}
+model Exercise {
+ slug String @id
+ payload String
+}
+model PlanTemplate {
+ id String @id
+ revision Int
+ payload String
+}
+model PlanExercise {
+ id String @id
+ templateId String
+ order Int
+ payload String
+ @@index([templateId, order])
+}
+
+model RateLimit {
+ id String @id
+ key String @unique
+ count Int
+ lastRequest Float
+ @@map("rateLimit")
+}

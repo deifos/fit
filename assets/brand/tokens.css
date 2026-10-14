@@ -1,0 +1,25 @@
+:root {
+  --fit-page: #f4f7f7;
+  --fit-panel: #ffffff;
+  --fit-sidebar: #101b1d;
+  --fit-sidebar-active: #293c3f;
+  --fit-text: #142326;
+  --fit-muted: #53646a;
+  --fit-border: #d9e2e5;
+  --fit-primary: #087f43;
+  --fit-primary-hover: #066735;
+  --fit-primary-soft: #e5f5ec;
+  --fit-primary-text: #ffffff;
+  --fit-chart: #098647;
+  --fit-warning: #865600;
+  --fit-error: #b42318;
+  --fit-focus: #007a45;
+  --fit-radius-panel: 16px;
+  --fit-radius-control: 8px;
+  --fit-sidebar-width: 224px;
+  --fit-content-max: 1600px;
+  --fit-touch-min: 44px;
+}
+/* Map these design tokens to the installed shadcn/Tailwind version.
+   Verify contrast in the actual rendered interface. */
+

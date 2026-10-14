@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "generatedWith": "Built-in image_gen",
+  "reference": "reference/approved-design-reference.png",
+  "assets": [
+    {
+      "id": "presses",
+      "file": "exercises/presses.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Incline barbell press — bottom near upper chest to arms extended above chest on incline bench. 2. Incline dumbbell press — separate dumbbells at upper chest to above shoulders on incline bench. 3. Flat barbell bench press — bar near chest to arms extended over shoulders on flat bench. 4. Parallel bar dips — elbows flexed to supported upright arms extended. 5. Dumbbell fly — on flat bench, softly bent arms open wide to dumbbells together above chest"
+    },
+    {
+      "id": "chest-arms",
+      "file": "exercises/chest-arms.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Pec deck — seated machine handles apart to together before chest. 2. Cable triceps pushdown — elbows bent at sides to elbows extended downward. 3. Overhead dumbbell extension — one dumbbell held with both hands behind head to extended above head. 4. Barbell curl — standing bar at thighs to elbows flexed with bar near chest. 5. Dumbbell curl — standing dumbbells at sides to elbows flexed"
+    },
+    {
+      "id": "back",
+      "file": "exercises/back-v2.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Pull-up — hanging from overhead bar to chin above bar. 2. Lat pulldown — seated arms overhead holding wide cable bar to bar near upper chest. 3. Barbell row — hip hinge, bar hanging under shoulders to bar near lower ribs with torso unchanged. 4. One-arm dumbbell row — one hand and knee on bench, other arm hangs weight to elbow drawn beside torso. 5. Cable face pull — standing cable rope at face height, arms forward to rope beside face with elbows bent",
+      "revisionPrompt": "Edit this exercise asset sheet. Preserve all rows, labels, layout, white background and grayscale/red fitness illustration style. Change ONLY row 2 Lat pulldown: show BOTH poses from a clear FRONT THREE-QUARTER VIEW. START seated on machine bench with feet flat and thighs under support, arms extended up holding wide lat bar in front of head. END same posture, elbows bent down beside torso, bar lowered IN FRONT of face to upper chest. The bar MUST NOT pass behind the head or neck. Make head and face clearly visible to remove ambiguity. Ensure cable connects to center of bar above. Keep every other row unchanged, including footer. Fix no other elements.",
+      "visualReview": "Pulldown changed to a front view. All rows still need technique review."
+    },
+    {
+      "id": "legs",
+      "file": "exercises/legs.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Barbell back squat — upright bar on upper back to controlled squat with feet flat. 2. Leg press — seated sled machine with knees bent to legs extended without hyperextension. 3. Barbell Romanian deadlift — upright with bar at thighs to hips pushed back and bar near shins, slight knee bend. 4. Leg extension — seated machine knees bent to shins raised, knees extended. 5. Standing calf raise — standing with heels lowered to heels raised, knees stable"
+    },
+    {
+      "id": "shoulders",
+      "file": "exercises/shoulders.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Dumbbell rear delt fly — hinged torso, arms hanging to arms opened sideways with soft elbows. 2. Standing barbell overhead press — bar at upper chest to overhead with arms extended. 3. Seated dumbbell overhead press — weights at shoulder level to overhead arms extended. 4. Dumbbell lateral raise — weights at sides to arms raised sideways at shoulder height. 5. Close-grip bench press — flat bench, shoulder-width grip bar near chest to above chest"
+    },
+    {
+      "id": "arms-kettlebells",
+      "file": "exercises/arms-kettlebells.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Hammer curl — dumbbells at sides palms inward to elbows flexed palms still inward. 2. EZ-bar curl — angled curl bar at thighs to elbows flexed near chest. 3. One-arm kettlebell row — hinged torso and supported free hand, kettlebell hanging to beside lower ribs. 4. Strict kettlebell press — kettlebell racked beside shoulder to overhead with no leg drive. 5. Kettlebell goblet squat — upright bell at chest to squat with heels grounded"
+    },
+    {
+      "id": "full-body",
+      "file": "exercises/full-body.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Two-hand kettlebell swing — hip hinge with bell back between thighs to standing tall with bell at chest height, arms relaxed, no overhead lift. 2. Barbell deadlift — bar on floor near shins, hips back to standing with bar at thighs. 3. Trap-bar deadlift — standing inside hexagonal bar, knees bent handles low to upright with bar at sides. 4. Push-up — high plank with arms extended to chest lowered near floor, straight body. 5. Double kettlebell front squat — two bells in front rack standing to deep controlled squat retaining front rack"
+    },
+    {
+      "id": "clean-press",
+      "file": "exercises/clean-press.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Single kettlebell clean and press — show THREE positions: hinge bell between legs, bell in rack at shoulder, bell overhead. 2. Double kettlebell clean and press — show THREE positions: hinge two bells between legs, two bells in front rack, two bells overhead"
+    },
+    {
+      "id": "get-up",
+      "file": "exercises/get-up.png",
+      "status": "draft-technique-review-required",
+      "prompt": "Use case: scientific-educational. Generate a high-resolution exercise illustration asset sheet for FIT / VLAD. Light neutral background, professional grayscale anatomical fitness-manual figures wearing charcoal shorts, restrained warm red/orange muscle emphasis, consistent style, anatomically credible joints and equipment. This is a draft for technique review. No app UI, no fake logos, no decorative objects. Each exercise in its own horizontal row with generous white gutters. Show clear distinct start and end poses side by side unless a sequence is requested. Show whole body and whole equipment. Use small correct exercise name above each row, START and END below poses. Keep each row self-contained for future extraction. No cropped limbs, no extra limbs, no bent bars. Same person and camera angle within each exercise. Highest clarity, portrait sheet, no heavy borders. Small footer 'Draft — technique review required'. Exercises in exact top-to-bottom order: 1. Turkish get-up — show SEVEN sequential positions for right arm holding light kettlebell vertically throughout: supine right knee bent left arm on floor; supported on left elbow; supported on left hand; hips raised; left knee swept underneath to half kneeling with left hand still on floor; upright half kneeling; standing tall. Show a clear return arrow indicating reverse order. Do not omit intermediate steps."
+    },
+    {
+      "id": "gym-banner",
+      "file": "hero/gym-banner.png",
+      "status": "ready-for-layout",
+      "prompt": "Use case: photorealistic-natural. Create a premium wide website banner image, aspect ratio 3:1, for a personal strength training log. Dark charcoal gym floor, close-up loaded barbell with realistic round black iron plates dominating right half, blurred gym background. Left half intentionally dark and uncluttered as space for later HTML heading. Soft side lighting, subtle emerald reflections, high contrast but real details. No text, no logos, no people, no watermarks. Professional fitness photography."
+    },
+    {
+      "id": "wordmark.svg",
+      "file": "brand/wordmark.svg",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "app-icon.svg",
+      "file": "brand/app-icon.svg",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "icon-192.png",
+      "file": "brand/icon-192.png",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "icon-512.png",
+      "file": "brand/icon-512.png",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "maskable-512.png",
+      "file": "brand/maskable-512.png",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "apple-touch-icon.png",
+      "file": "brand/apple-touch-icon.png",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "tokens.css",
+      "file": "brand/tokens.css",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    },
+    {
+      "id": "manifest.example.webmanifest",
+      "file": "brand/manifest.example.webmanifest",
+      "status": "ready-for-integration",
+      "method": "original-code"
+    }
+  ]
+}

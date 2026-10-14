@@ -1,0 +1,114 @@
+[
+  {
+    "File": "assets\\brand\\apple-touch-icon.png",
+    "Width": 180,
+    "Height": 180,
+    "Bytes": 1942,
+    "SHA256": "94D613CCC43D325FF32DB33CFD06E68320D8E8DAD7EA36589A4312CD45EF0F01"
+  },
+  {
+    "File": "assets\\brand\\icon-192.png",
+    "Width": 192,
+    "Height": 192,
+    "Bytes": 2027,
+    "SHA256": "D15E17546874AABE3BEB39BB1B25934A2287A60EB5475E6DEEC21AD3C0DD59F0"
+  },
+  {
+    "File": "assets\\brand\\icon-512.png",
+    "Width": 512,
+    "Height": 512,
+    "Bytes": 6102,
+    "SHA256": "7B92375AFCCCC251479E49DBAEF8A74CC080FA5FB59EE25CFD79B02C4621CD6F"
+  },
+  {
+    "File": "assets\\brand\\maskable-512.png",
+    "Width": 512,
+    "Height": 512,
+    "Bytes": 5741,
+    "SHA256": "22E13E68A829DFEDF9BC77DA542AE7AD572619B145142F3A2744FA39BBC28B4A"
+  },
+  {
+    "File": "assets\\exercises\\arms-kettlebells.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1284513,
+    "SHA256": "669F0B5F3B687642EA29F79C8D98DC64C401DD9103AD242E5C8C9548D5976CD9"
+  },
+  {
+    "File": "assets\\exercises\\back-v2.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1735117,
+    "SHA256": "460A755EF9C1ABD82F6C7D685C24C29D7A6ACCCE55DD02C1A5D57974EE8AA820"
+  },
+  {
+    "File": "assets\\exercises\\back.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1633126,
+    "SHA256": "9B2A92DA09DE8910A70D526D00472467861241D2C6C4D8F0B6AC0ACB45992CAC"
+  },
+  {
+    "File": "assets\\exercises\\chest-arms.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1638213,
+    "SHA256": "6D551F3589A0F71D6140F735BE05AD9486053E9E52726386CD4D202ACC193EC1"
+  },
+  {
+    "File": "assets\\exercises\\clean-press.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1631772,
+    "SHA256": "817F26A5A816E32B85379632714944F1959D71E751FD35472699971ABD15D24F"
+  },
+  {
+    "File": "assets\\exercises\\full-body.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1534800,
+    "SHA256": "B422E8E4E54914054133B23F855389D0AC5A15AE5C5C47906F3AA3D6AA1A3294"
+  },
+  {
+    "File": "assets\\exercises\\get-up.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1717491,
+    "SHA256": "FB066EDA7A309D9EDB154CB4C271CE733EACDA75AC3004012B3296EE5D079770"
+  },
+  {
+    "File": "assets\\exercises\\legs.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1548348,
+    "SHA256": "F85C195E80A346A65DB18A22EAC55F4CCCCD501A20EE92F383F1616F6FB8C38E"
+  },
+  {
+    "File": "assets\\exercises\\presses.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1538965,
+    "SHA256": "32F9E9540C19243143B34FCBDEB8606F5C716E84D73419C184BA779FA3747C08"
+  },
+  {
+    "File": "assets\\exercises\\shoulders.png",
+    "Width": 1024,
+    "Height": 1536,
+    "Bytes": 1375765,
+    "SHA256": "54CFED319D7EEA9BA7615031ED1ADFD7D715AFBF35A98DD8E17D726292F4F2B1"
+  },
+  {
+    "File": "assets\\hero\\gym-banner.png",
+    "Width": 2172,
+    "Height": 724,
+    "Bytes": 2263993,
+    "SHA256": "BAC1EE53CAAF4A6AA42681E149F5872560660DE920709A3C62DC1565102331AC"
+  },
+  {
+    "File": "assets\\reference\\approved-design-reference.png",
+    "Width": 1536,
+    "Height": 1024,
+    "Bytes": 2003379,
+    "SHA256": "E460BE03E367554DA5C2F20735ACB027206A33C1CD6BB27523087B6D7E29F79F"
+  }
+]
