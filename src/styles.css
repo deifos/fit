@@ -177,3 +177,14 @@
 @keyframes celebration-spark{from{opacity:0;transform:rotate(calc(var(--spark)*45deg)) translateY(-8px) scale(.5)}30%{opacity:1}to{opacity:0;transform:rotate(calc(var(--spark)*45deg)) translateY(-55px) scale(.8)}}
 @media(max-width:767px){.topbar{gap:5px}.topbar .sync-status{max-width:82px}.notification-heading{padding:16px}.notification-item{padding:16px}.workout-celebration{padding:20px}[data-sonner-toaster][data-y-position=bottom]{bottom:calc(86px + env(safe-area-inset-bottom))!important}}
 @media(prefers-reduced-motion:reduce){.celebration-sparks{display:none}}
+
+/* Completion stays visible independently of the selected calendar day. */
+.week-strip button.selected{background:var(--card);color:var(--primary);border-color:var(--primary);outline:2px solid var(--primary);outline-offset:2px}
+.week-strip button.selected strong{color:var(--primary)}
+.week-strip button.completed{background:#247a35;border-color:#247a35;color:#fff}
+.week-strip button.completed strong,.week-strip button.completed .done{color:#fff}
+.week-strip button.completed .week-state-text{font-size:12px;font-weight:650}
+.week-strip button.completed .week-state-dot{font-size:16px;font-weight:750;line-height:18px}
+.week-strip button.completed:hover{background:#1c622a;border-color:#1c622a}
+.week-strip button.completed.selected{outline:2px solid #174b24;outline-offset:3px}
+.week-strip button:focus-visible{outline:3px solid #101b1d;outline-offset:3px}
