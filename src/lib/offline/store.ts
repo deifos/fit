@@ -13,7 +13,35 @@ export async function pending(userId:string):Promise<Pending[]>{return (await (a
 export async function save(userId:string,entityType:EntityType,id:string,payload:unknown,action:Operation['action']='put',expectedLastOperationId?:string){
  const valid=payloadSchemas[entityType].parse(payload);const database=await db();const tx=database.transaction(['records','outbox','meta'],'readwrite');
  const key=`${userId}:${id}`;const current=await tx.objectStore('records').get(key);if(expectedLastOperationId&&current?.lastOperationId!==expectedLastOperationId){tx.abort();await tx.done.catch(()=>{});throw new Error('This record changed in another tab. Your form is kept. Reload to compare before saving.')}const queue=(await tx.objectStore('outbox').getAll()).filter(o=>o.userId===userId&&o.entityId===id).sort((a,b)=>a.sequence-b.sequence);
- const sequence=(await tx.objectStore('meta').get('sequence')??0)+1;const baseRevision=queue.length?queue.at(-1).baseRevision+1:current?.revision??0;
+ let sequence=(await tx.objectStore('meta').get('sequence')??0)+1;
+ // A routine opened weeks ago has not actually started until its first saved set.
+ if(entityType==='set'&&action==='put'&&(valid as any).completedAt){
+  const all=(await tx.objectStore('records').getAll()).filter(r=>r.userId===userId);
+  const exercise=all.find(r=>r.id===(valid as any).sessionExerciseId&&!r.deletedAt);
+  const session=all.find(r=>r.id===exercise?.payload.sessionId&&!r.deletedAt&&r.entityType==='session');
+  const childIds=new Set(all.filter(r=>r.entityType==='exercise'&&r.payload.sessionId===session?.id).map(r=>r.id));
+  const hasSets=all.some(r=>r.entityType==='set'&&childIds.has(r.payload.sessionExerciseId)&&r.payload.completedAt);
+  if(session?.payload.status==='active'&&!hasSets&&session.payload.localDate===localDate(session.payload.timezone,new Date(session.payload.startedAt))){
+   const timestamp=(valid as any).completedAt;const date=localDate(session.payload.timezone,new Date(timestamp));
+   if(date!==session.payload.localDate){
+    const payload={...session.payload,localDate:date,startedAt:timestamp};
+    const queued=(await tx.objectStore('outbox').getAll()).filter(o=>o.userId===userId&&o.entityId===session.id).sort((a,b)=>a.sequence-b.sequence);
+    const operationId=crypto.randomUUID();const baseRevision=queued.length?queued.at(-1).baseRevision+1:session.revision;
+    await tx.objectStore('records').put({...session,payload,lastOperationId:operationId});
+    await tx.objectStore('outbox').put({key:operationId,userId,sequence:sequence++,state:'pending',operationId,entityType:'session',entityId:session.id,baseRevision,action:'put',payload,schemaVersion:1});
+    const settings=all.find(r=>r.entityType==='settings'&&!r.deletedAt);
+    if(all.filter(r=>r.entityType==='session'&&!r.deletedAt).length===1&&settings?.payload.planStartDate===session.payload.localDate){
+     const settingsPayload={...settings.payload,planStartDate:date};const settingsOperationId=crypto.randomUUID();
+     const settingsQueue=(await tx.objectStore('outbox').getAll()).filter(o=>o.userId===userId&&o.entityId===settings.id).sort((a,b)=>a.sequence-b.sequence);
+     const settingsRevision=settingsQueue.length?settingsQueue.at(-1).baseRevision+1:settings.revision;
+     await tx.objectStore('records').put({...settings,payload:settingsPayload,lastOperationId:settingsOperationId});
+     await tx.objectStore('outbox').put({key:settingsOperationId,userId,sequence:sequence++,state:'pending',operationId:settingsOperationId,entityType:'settings',entityId:settings.id,baseRevision:settingsRevision,action:'put',payload:settingsPayload,schemaVersion:1});
+    }
+
+   }
+  }
+ }
+ const baseRevision=queue.length?queue.at(-1).baseRevision+1:current?.revision??0;
  const operationId=crypto.randomUUID();const operation:Pending={key:operationId,userId,sequence,state:'pending',operationId,entityType,entityId:id,baseRevision,action,payload:valid,schemaVersion:1};
  await tx.objectStore('records').put({key,id,userId,entityType,revision:current?.revision??0,lastOperationId:operationId,deletedAt:action==='delete'?new Date().toISOString():null,payload:valid});
  await tx.objectStore('outbox').put(operation);await tx.objectStore('meta').put(sequence,'sequence');await tx.done;changed();
@@ -53,3 +81,23 @@ export async function setDraft(userId:string,id:string,value:unknown){await (awa
 export async function getDraft(userId:string,id:string){return (await (await db()).get('drafts',draftKey(userId,id)))?.value}
 export async function clearOwner(userId:string){const database=await db();const tx=database.transaction(['records','outbox','drafts','meta'],'readwrite');for(const name of ['records','outbox','drafts'])for(const row of await tx.objectStore(name).getAll())if(row.userId===userId)await tx.objectStore(name).delete(row.key);await tx.objectStore('meta').delete('owner');await tx.done;changed()}
 export async function exportData(userId:string){return {schemaVersion:1,exportedAt:new Date().toISOString(),records:await records(userId),pending:await pending(userId),drafts:(await (await db()).getAll('drafts')).filter(r=>r.userId===userId)}}
+
+// Owner-requested correction: only the October placeholder Legs session with
+// exclusively November 12 set evidence qualifies. Never infer dates from today.
+export async function repairNovemberWorkout(userId:string){
+ const all=await records(userId);
+ const sessions=all.filter(r=>r.entityType==='session'&&!r.deletedAt);
+ let repaired=false;
+ for(const session of sessions){
+  if(session.payload.localDate!=='2026-10-14'||session.payload.templateSnapshot.dayIndex!==3)continue;
+  const childIds=new Set(all.filter(r=>r.entityType==='exercise'&&!r.deletedAt&&r.payload.sessionId===session.id).map(r=>r.id));
+  const sets=all.filter(r=>r.entityType==='set'&&!r.deletedAt&&childIds.has(r.payload.sessionExerciseId)&&r.payload.completedAt);
+  if(!sets.length||sets.some(r=>localDate(session.payload.timezone,new Date(r.payload.completedAt))!=='2026-11-12'))continue;
+  await save(userId,'session',session.id,{...session.payload,localDate:'2026-11-12'},'put',session.lastOperationId);
+  repaired=true;
+  const settings=all.find(r=>r.entityType==='settings'&&!r.deletedAt);
+  if(sessions.length===1&&settings?.payload.planStartDate==='2026-10-14')
+   await save(userId,'settings',settings.id,{...settings.payload,planStartDate:'2026-11-12'},'put',settings.lastOperationId);
+ }
+ return repaired;
+}

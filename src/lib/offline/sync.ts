@@ -1,4 +1,4 @@
-import { acknowledge,pending,mark,refresh } from './store';
+import { acknowledge,pending,mark,refresh,repairNovemberWorkout } from './store';
 export type SyncStatus='Saving'|'Not saved'|'Saved on phone'|'Syncing'|'Synced'|'Needs sign-in'|'Conflict'|'Could not sync';
 let active:Promise<void>|null=null;let attempts=0;let timer:ReturnType<typeof setTimeout>|undefined;let requested=false;
 export function synchronize(userId:string,status:(s:SyncStatus)=>void):Promise<void>{if(active){requested=true;return active}
@@ -15,6 +15,7 @@ export function synchronize(userId:string,status:(s:SyncStatus)=>void):Promise<v
   if(!res.ok)throw new Error('Temporary sync failure');await acknowledge(op,result.record);
  }
  const res=await fetch('/api/sync');if(res.status===401){status('Needs sign-in');return}if(!res.ok)throw new Error('Could not refresh');await refresh(userId,(await res.json() as any).records);
+ if(await repairNovemberWorkout(userId))requested=true;
  attempts=0;const left=await pending(userId);status(trouble||left.some(p=>p.state==='conflict')?'Conflict':left.some(p=>p.state==='invalid')?'Could not sync':left.length?'Saved on phone':'Synced');
  }catch{status('Could not sync');clearTimeout(timer);if(attempts<5)timer=setTimeout(()=>synchronize(userId,status),Math.min(30000,1000*2**attempts++))}
  };
