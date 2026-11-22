@@ -1,5 +1,62 @@
 [
   {
+    "slug": "barbell-hip-thrust",
+    "name": "Barbell hip thrust",
+    "muscles": ["Glutes", "Hamstrings"],
+    "instructions": [
+      "Secure a bench so it cannot slide. Rest your upper back against its edge and place a padded bar across your hip crease.",
+      "Plant both feet flat, about hip-width apart. Hold the bar steady with both hands.",
+      "Brace your trunk and drive through your feet to lift your hips until your torso and thighs align. Keep your ribs down rather than arching your lower back.",
+      "Lower your hips with control. Log the total weight of the bar and plates in pounds."
+    ],
+    "equipment": "Barbell",
+    "loadBasis": "total",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": null,
+    "reviewStatus": "written-guide-only",
+    "techniqueSource": ""
+  },
+  {
+    "slug": "crunch",
+    "name": "Crunch",
+    "muscles": ["Core", "Abdominals"],
+    "instructions": [
+      "Lie on your back with knees bent and feet flat on the floor.",
+      "Cross your arms over your chest and keep your neck relaxed.",
+      "Exhale and curl your shoulder blades gently off the floor without pulling your head forward.",
+      "Lower slowly. Count each lift and return as one rep; bodyweight sets do not need a weight entry."
+    ],
+    "equipment": "Bodyweight",
+    "loadBasis": "bodyweight",
+    "equipmentCount": 1,
+    "unilateral": false,
+    "instructionVersion": 1,
+    "image": null,
+    "reviewStatus": "written-guide-only",
+    "techniqueSource": ""
+  },
+  {
+    "slug": "dead-bug",
+    "name": "Dead bug",
+    "muscles": ["Core", "Abdominals", "Obliques"],
+    "instructions": [
+      "Lie on your back with arms pointing upward and hips and knees bent to about 90 degrees.",
+      "Brace your abdomen and keep your lower back gently against the floor.",
+      "Slowly extend one leg and the opposite arm only as far as you can keep your back stable.",
+      "Return and alternate sides. Log reps per side using Both; shorten the reach if your back starts to arch."
+    ],
+    "equipment": "Bodyweight",
+    "loadBasis": "bodyweight",
+    "equipmentCount": 1,
+    "unilateral": true,
+    "instructionVersion": 1,
+    "image": null,
+    "reviewStatus": "written-guide-only",
+    "techniqueSource": ""
+  },
+  {
     "slug": "incline-barbell-press",
     "name": "Incline barbell press",
     "muscles": [

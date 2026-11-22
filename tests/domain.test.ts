@@ -1,8 +1,23 @@
 import {describe,it,expect,vi} from 'vitest';
-import {localDate,dateSchema,pounds,loadedVolume,remaining,weekKey,type RecordData,bodyWeightSchema,setSchema} from '../src/lib/domain';
+import {localDate,dateSchema,pounds,loadedVolume,remaining,weekKey,type RecordData,bodyWeightSchema,setSchema,templateSchema} from '../src/lib/domain';
 import {exercises,templates,bySlug} from '../src/features/plan/catalog';
 describe('plan and metrics',()=>{
- it('keeps all phases, alternatives and free targets',()=>{expect(templates).toHaveLength(15);expect(exercises).toHaveLength(37);for(const t of templates)for(const e of t.exercises){expect(e.exercise).toBeDefined();for(const a of e.alternatives)expect(bySlug[a]).toBeDefined()}expect(templates.find(t=>t.phase===2&&t.dayIndex===5)!.exercises[0].repMin).toBeNull();expect(templates.find(t=>t.phase===1&&t.dayIndex===5)!.exercises.filter(e=>e.circuitGroup).every(e=>e.repMin===null)).toBe(true)});
+ it('adds core and weighted hip thrusts across every phase with valid logging targets',()=>{
+  for(const template of templates){
+   expect(templateSchema.safeParse(template).success).toBe(true);
+   const slugs=template.exercises.map(t=>t.exercise.slug);
+   if(template.dayIndex===1||template.dayIndex===4){
+    expect(slugs.slice(-2)).toEqual(['crunch','dead-bug']);
+    expect(template.revision).toBe(2);
+   }
+   if(template.dayIndex===3){expect(slugs).toContain('barbell-hip-thrust');expect(template.revision).toBe(3)}
+  }
+  const payload={sessionExerciseId:crypto.randomUUID(),order:0,kind:'working',weightHundredths:null,reps:10,side:'both',loadBasis:'bodyweight',equipmentCount:1,rpe:null,notes:'',completedAt:new Date().toISOString(),parentSetId:null};
+  expect(setSchema.safeParse(payload).success).toBe(true);
+  expect(loadedVolume({deletedAt:null,payload} as RecordData,bySlug['dead-bug'])).toBe(0);
+  expect(loadedVolume({deletedAt:null,payload:{...payload,weightHundredths:9000,loadBasis:'total',side:'none'}} as RecordData,bySlug['barbell-hip-thrust'])).toBe(900);
+ });
+ it('keeps all phases, alternatives and free targets',()=>{expect(templates).toHaveLength(15);expect(exercises).toHaveLength(40);for(const t of templates)for(const e of t.exercises){expect(e.exercise).toBeDefined();for(const a of e.alternatives)expect(bySlug[a]).toBeDefined()}expect(templates.find(t=>t.phase===2&&t.dayIndex===5)!.exercises[0].repMin).toBeNull();expect(templates.find(t=>t.phase===1&&t.dayIndex===5)!.exercises.filter(e=>e.circuitGroup).every(e=>e.repMin===null)).toBe(true)});
  it('uses equipment and side multipliers independently',()=>{const record={deletedAt:null,payload:{completedAt:'2026-10-13T12:00:00Z',kind:'working',weightHundredths:5000,equipmentCount:2,reps:8,side:'none',loadBasis:'per-implement'}} as RecordData;expect(loadedVolume(record,bySlug['incline-dumbbell-press'])).toBe(800);record.payload.equipmentCount=1;record.payload.side='both';expect(loadedVolume(record,bySlug['one-arm-kettlebell-row'])).toBe(800);record.payload.kind='warmup';expect(loadedVolume(record,bySlug['one-arm-kettlebell-row'])).toBe(0);record.payload.kind='working';record.payload.loadBasis='assistance';expect(loadedVolume(record,bySlug['pull-up'])).toBe(0)});
  it('stores exact decimal pounds and calendar dates',()=>{expect(pounds('172.35')).toBe(17235);expect(()=>pounds('172.355')).toThrow();expect(dateSchema.safeParse('2026-02-30').success).toBe(false);expect(dateSchema.parse('2024-02-29')).toBe('2024-02-29');expect(bodyWeightSchema.safeParse({localDate:'2026-10-12',weightHundredths:0,notes:''}).success).toBe(false);expect(weekKey('2026-10-18')).toBe('2026-10-12')});
  it('uses a deadline after suspend',()=>{vi.spyOn(Date,'now').mockReturnValue(100000);expect(remaining(130000,180)).toBe(30);expect(remaining(90000,180)).toBe(0);expect(remaining(null,83)).toBe(83);vi.restoreAllMocks()});

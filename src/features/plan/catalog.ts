@@ -20,6 +20,12 @@ for(let phase=1;phase<=3;phase++)for(let day=1;day<=5;day++){
  if(phase===3&&day<5){const main=day===1?[0,1]:day===2?[0,1]:day===3?[0,1]:[0,2];entries=entries.map((e,i)=>main.includes(i)?{...e,setMin:1,setMax:1,notes:'One all-out set; optional rest-pause (supplied plan note).'}:e)}
  if(phase===2&&day===5)entries=[row('barbell-deadlift|barbell-back-squat',[1,1],[null,null]),row('single-kettlebell-clean-and-press',[3,3],[4,8]),row('two-hand-kettlebell-swing',[3,3],[8,12]),row('turkish-get-up',[null,null],[null,null],{optional:true,notes:'Very light practice.'})];
  if(phase===3&&day===5)entries=[row('barbell-deadlift|barbell-back-squat',[1,1],[null,null]),row('single-kettlebell-clean-and-press|double-kettlebell-clean-and-press',[3,4],[3,6]),row('double-kettlebell-front-squat|kettlebell-goblet-squat',[2,3],[6,10]),row('two-hand-kettlebell-swing',[3,3],[8,12]),row('turkish-get-up',[null,null],[null,null],{optional:true})];
- templates.push({id:`phase-${phase}-day-${day}`,revision:day===3?2:1,phase,dayIndex:day,title:titles[day-1],notes:phaseNotes[phase-1],exercises:entries});
+ // Update future routines only; saved sessions retain their template/exercise snapshots.
+ if(day===3)entries.push(row('barbell-hip-thrust',[2,2],[8,12],{notes:'Weighted hip thrust. Log the total weight of the bar and plates.'}));
+ if(day===1||day===4)entries.push(
+  row('crunch',[2,2],[10,15],{restSeconds:60,notes:'Core routine. Use controlled reps and rest 60 seconds between sets.'}),
+  row('dead-bug',[2,2],[8,10],{restSeconds:60,notes:'Core routine. Log reps per side. Keep your lower back stable; stop before form breaks down.'})
+ );
+ templates.push({id:`phase-${phase}-day-${day}`,revision:day===3?3:day===1||day===4?2:1,phase,dayIndex:day,title:titles[day-1],notes:phaseNotes[phase-1],exercises:entries});
 }
 export function targetText(t:Target){const range=(a:number|null,b:number|null)=>a===null?'Free':a===b?`${a}`:`${a}–${b}`;return `${range(t.setMin,t.setMax)} ${t.circuitGroup?'rounds':'sets'} · ${range(t.repMin,t.repMax)} reps${t.exercise.unilateral?' per side':''}${t.optional?' · Optional':''}`}
