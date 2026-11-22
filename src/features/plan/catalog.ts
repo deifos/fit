@@ -2,6 +2,8 @@ import raw from './exercises.json';
 import type {Exercise,Target,Template} from '../../lib/domain';
 export const exercises=(raw as Exercise[]).filter(e=>e.slug!=='leg-extension');
 export const bySlug=Object.fromEntries((raw as Exercise[]).map(e=>[e.slug,e]));
+// Newly available artwork can fill an old snapshot's blank without rewriting history.
+export function exerciseImage(exercise:Pick<Exercise,'slug'|'image'>){return exercise.image??bySlug[exercise.slug]?.image??null}
 function row(ids:string,sets:[number|null,number|null],reps:[number|null,number|null],extra:Partial<Target>={}):Target{const [first,...alternatives]=ids.split('|');return {exercise:bySlug[first],alternatives,setMin:sets[0],setMax:sets[1],repMin:reps[0],repMax:reps[1],optional:false,circuitGroup:null,restSeconds:180,notes:'',...extra}}
 const days=[
  [row('incline-barbell-press|incline-dumbbell-press',[1,2],[6,10]),row('flat-barbell-bench-press|parallel-bar-dips',[1,1],[6,10]),row('dumbbell-fly|pec-deck',[1,1],[8,12]),row('triceps-pushdown|overhead-dumbbell-extension',[1,2],[8,12]),row('kettlebell-goblet-squat|two-hand-kettlebell-swing',[2,2],[10,12],{notes:'Light finisher.'})],

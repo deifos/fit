@@ -1,6 +1,16 @@
 import {describe,it,expect,vi} from 'vitest';
 import {localDate,dateSchema,pounds,loadedVolume,remaining,weekKey,type RecordData,bodyWeightSchema,setSchema,templateSchema} from '../src/lib/domain';
-import {exercises,templates,bySlug} from '../src/features/plan/catalog';
+import {exercises,templates,bySlug,exerciseImage} from '../src/features/plan/catalog';
+it('fills missing historical artwork without modifying the saved exercise',()=>{
+ for(const slug of ['crunch','dead-bug','barbell-hip-thrust']){
+  const snapshot={...bySlug[slug],image:null};
+  const before=structuredClone(snapshot);
+  expect(exerciseImage(snapshot)).toBe(`/assets/exercises/${slug}.webp`);
+  expect(snapshot).toEqual(before);
+ }
+ expect(exerciseImage({slug:'crunch',image:'/original.webp'})).toBe('/original.webp');
+ expect(exerciseImage({slug:'unknown',image:null})).toBeNull();
+});
 describe('plan and metrics',()=>{
  it('adds core and weighted hip thrusts across every phase with valid logging targets',()=>{
   for(const template of templates){
